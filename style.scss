@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$corpadrao: hsl(212, 45%, 89%);
+$corsecundaria: hsl(220, 15%, 55%);
+$corterceira: hsl(218, 44%, 22%);
+$corfundoquadrado: hsl(0, 0%, 100%);
+$corsombra: hsl(217, 17%, 82%);
+$corsomhover: #3685ff;
+
+
+body{
+    background-color: $corpadrao;
+    background-size: 1440px;
+}
+
+.quadrado{
+    display: flex;
+    background-color: $corfundoquadrado;
+    justify-content:center;
+    align-items:center;
+    margin: 250px auto 20px auto;
+    flex-direction: column;
+    height: 480px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 65px -35px $corsecundaria;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    img{
+        height: 270px;
+        border-radius: 10px; 
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin: 0px auto 20px auto;
+        // padding: 15px;
+        }
+
+    .improve{
+        font-size: 21px;
+        font-family: Outfit;
+        font-weight: 600;
+        text-align:center;
+        color: $corterceira;
+    }
+    .scan-text{
+        font-size: 15px;
+        padding-top: 10px;
+        margin: 0 auto 40px auto;
+        font-family: Outfit;
+        font-weight: 200;
+        text-align: center;
+        color:$corsecundaria
+    }
+}
+
+.quadrado:hover{
+    box-shadow: 10px 10px 220px -20px $corsomhover;
+}
